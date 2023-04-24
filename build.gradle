@@ -25,6 +25,11 @@ emerge {
 		sha = System.getenv("HEAD_SHA")
 		baseSha = System.getenv("BASE_SHA")
 		prNumber = System.getenv("PR_NUMBER")
+
+		gitHubOptions {
+			repoOwner = "EmergeTools"
+			repoName = "mastodon-android"
+		}
 	}
 
 	launchBooster {
