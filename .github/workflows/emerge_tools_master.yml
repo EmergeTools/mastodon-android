@@ -1,9 +1,9 @@
-name: Emerge Tools
+name: Emerge Tools Base Upload
 
 on:
   push:
     branches:
-      - master
+      - 'master'
 
 jobs:
   emerge_tools:

@@ -1,4 +1,4 @@
-name: Emerge Tools
+name: Emerge Tools PR Upload
 
 on:
   pull_request:
