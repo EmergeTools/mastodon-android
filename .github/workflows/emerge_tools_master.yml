@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-  pull_request:
 
 jobs:
   emerge_tools:
@@ -14,9 +13,7 @@ jobs:
 
     env:
       EMERGE_API_TOKEN: ${{ secrets.EMERGE_API_TOKEN }}
-      BASE_SHA: ${{ github.event.pull_request.base.sha }}
-      HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-      PR_NUMBER: ${{ github.event.pull_request.number }}
+      HEAD_SHA: ${{ env.GITHUB_SHA }}
 
     steps:
       - name: Checkout
