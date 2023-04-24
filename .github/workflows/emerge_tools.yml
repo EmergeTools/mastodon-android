@@ -9,8 +9,6 @@ on:
     branches:
       - develop
 
-# macOS environments: https://github.com/actions/virtual-environments/tree/main/images/macos
-
 jobs:
   emerge_tools:
     name: Upload Build Analysis to Emerge Tools
