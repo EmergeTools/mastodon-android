@@ -20,6 +20,12 @@ emerge {
 	appProjectPath = ":mastodon"
 	apiToken = System.getenv("EMERGE_API_TOKEN")
 	buildType = "Public Github"
+
+	vcsOptions {
+		sha = System.getenv("HEAD_SHA")
+		baseSha = System.getenv("BASE_SHA")
+		prNumber = System.getenv("PR_NUMBER")
+	}
 }
 
 task clean(type: Delete) {
