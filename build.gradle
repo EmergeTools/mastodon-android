@@ -26,6 +26,10 @@ emerge {
 		baseSha = System.getenv("BASE_SHA")
 		prNumber = System.getenv("PR_NUMBER")
 	}
+
+	launchBooster {
+		enabled.set(false)
+	}
 }
 
 task clean(type: Delete) {
