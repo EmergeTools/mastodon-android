@@ -13,11 +13,12 @@ buildscript {
 }
 
 plugins {
-	id "com.emergetools.android" version "1.4.3"
+	id "com.emergetools.android" version "1.5.0"
 }
 
 emerge {
 	appProjectPath = ":mastodon"
+	performanceProjectPath = ":performance"
 	apiToken = System.getenv("EMERGE_API_TOKEN")
 	buildType = "Public Github"
 
