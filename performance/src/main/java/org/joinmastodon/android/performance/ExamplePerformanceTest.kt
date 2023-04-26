@@ -5,7 +5,6 @@ import com.emergetools.test.annotations.EmergeInit
 import com.emergetools.test.annotations.EmergeSetup
 import com.emergetools.test.annotations.EmergeTest
 
-private const val LAUNCH_TIMEOUT = 5000L
 private const val APP_PACKAGE_NAME = "org.joinmastodon.android"
 
 /**
@@ -36,9 +35,10 @@ class ExamplePerformanceTest {
   }
 
   @EmergeTest
-  fun samplePerfTest() {
+  fun coldLaunchAndOpenLogInTest() {
     Relax(APP_PACKAGE_NAME) {
       coldLaunch()
+      click("Log in")
     }
   }
 }
