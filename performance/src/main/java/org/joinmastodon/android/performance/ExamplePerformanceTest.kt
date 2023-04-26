@@ -35,10 +35,9 @@ class ExamplePerformanceTest {
   }
 
   @EmergeTest
-  fun coldLaunchAndOpenLogInTest() {
+  fun exampleStartupTest() {
     Relax(APP_PACKAGE_NAME) {
-      coldLaunch()
-      click("Log in")
+      launch()
     }
   }
 }
